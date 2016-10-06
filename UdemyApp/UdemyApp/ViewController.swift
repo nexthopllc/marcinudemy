@@ -8,34 +8,26 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
    
     
     @IBOutlet weak var thelabel: UILabel!
+        
     
-    var tapcount = 0
+    @IBOutlet weak var text1: UITextField!
     
-    
-
+    @IBOutlet weak var text2: UITextField!
     
     @IBAction func buttonTapped(_ sender: AnyObject) {
         
-         tapcount = tapcount + 1
-        if tapcount >= 10 {
-            thelabel.text = "You pressed button 10 times"
-            
-           
-        }
-
-    }
-    
-    
-    @IBAction func button2tapped(_ sender: AnyObject) {
+        var addition = false
         
-        thelabel.text = "Buttons are Cool!!!"
-        print("Burron #2 Tapped")
-        tapcount = 0
-
+        if addition {
+            thelabel.text = "Answer is \((Double(text1.text!)! + Double(text2.text!)!))"}
+        else {
+            thelabel.text = "Answer is \((Double(text1.text!)! - Double(text2.text!)!))"
+        }
         
     }
     

@@ -36,25 +36,39 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mhv-Ko-4MC">
-                                <state key="normal" title="Button #2"/>
-                                <connections>
-                                    <action selector="button2tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fy6-oF-qST"/>
-                                </connections>
-                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Fk-u1-fnD">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="06R-4D-Ldo"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NWq-bK-7va">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="mXD-OL-wFT"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="mhv-Ko-4MC" firstAttribute="top" secondItem="JOe-Pw-3Fu" secondAttribute="bottom" constant="20" id="Nhk-G6-1RN"/>
+                            <constraint firstItem="0Fk-u1-fnD" firstAttribute="top" secondItem="JOe-Pw-3Fu" secondAttribute="bottom" constant="20" id="AEr-40-NMv"/>
+                            <constraint firstItem="NWq-bK-7va" firstAttribute="top" secondItem="0Fk-u1-fnD" secondAttribute="bottom" constant="20" id="Dfl-WL-hlS"/>
                             <constraint firstItem="JOe-Pw-3Fu" firstAttribute="top" secondItem="uNa-NN-QNF" secondAttribute="bottom" constant="20" id="ZCA-mQ-kl6"/>
                             <constraint firstItem="wvu-2s-bYK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aq2-Sl-1cN"/>
-                            <constraint firstItem="mhv-Ko-4MC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kSr-0r-CYa"/>
+                            <constraint firstItem="0Fk-u1-fnD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jjb-Q0-zg7"/>
+                            <constraint firstItem="NWq-bK-7va" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pqN-r5-wms"/>
                             <constraint firstItem="uNa-NN-QNF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uTL-bt-ldY"/>
                             <constraint firstItem="uNa-NN-QNF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vci-zp-qve"/>
                             <constraint firstItem="uNa-NN-QNF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="xRL-e2-XxA"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="text1" destination="0Fk-u1-fnD" id="9Ha-KU-H2h"/>
+                        <outlet property="text2" destination="NWq-bK-7va" id="7qF-uh-NEQ"/>
                         <outlet property="thelabel" destination="uNa-NN-QNF" id="8Lf-HT-gFb"/>
                     </connections>
                 </viewController>
